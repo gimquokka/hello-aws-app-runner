@@ -11,12 +11,3 @@ class HelloAwsAppRunnerApplication
 fun main(args: Array<String>) {
     runApplication<HelloAwsAppRunnerApplication>(*args)
 }
-
-@Controller
-class PingController() {
-    @GetMapping("/ping")
-    fun getPing(): String {
-        return "pong"
-    }
-}
-
